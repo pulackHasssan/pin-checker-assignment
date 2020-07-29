@@ -101,16 +101,14 @@
         document.getElementById("all-clear").addEventListener("click", function(){
             document.getElementById("input-number").value = " ";
         })
-         document.getElementById("single-clear").addEventListener("click", function(){
-        document.getElementById("input-number").value = inputNumber.indexOf(" ");  
-         })
+       
         const submitBtn = document.getElementById("submit-button");
         submitBtn.addEventListener("click", function(){
-            if (inputNumber.str===randomInput.str){
-                document.getElementById("matched").style.display = "block"
+            if (document.getElementById("random-input").value === document.getElementById("input-number").value){
+                document.getElementById("matched").style.display = "block";  
             }
             else{
-                document.getElementById("not-matched").style.display = "block"
+                document.getElementById("not-matched").style.display = "block";
             }
         })
 
